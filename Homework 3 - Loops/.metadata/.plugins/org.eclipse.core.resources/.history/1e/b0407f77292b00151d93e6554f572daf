@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Task2 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter a number: ");
+
+		int n = input.nextInt();
+		int biggest = n;
+		
+
+		for (int i = 0; i <= 5; i++) {
+			if (n > biggest) {
+				biggest = n;
+			}
+			System.out.println(biggest);
+		}
+		input.close();
+	}
+}

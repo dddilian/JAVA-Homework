@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Task3 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Enter two numbers for N! and K!. N must be bigger, otherwise the program will abort!");
+		int N = input.nextInt();
+		System.out.println("Enter a number for N!: ");
+		
+		System.out.println("Enter a number for K!: ");
+		int K = input.nextInt();
+		
+		if (N < K) {
+			System.out.println("N! is smaller than K!, the program will abort");
+			
+		} else {
+
+		}
+		input.close();
+	}
+}
