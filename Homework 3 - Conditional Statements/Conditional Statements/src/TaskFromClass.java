@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class TaskFromClass {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Please enter an integer:");
+		int numInt = input.nextInt();
+
+		if ((numInt >= 1) && (numInt <= 5)) {
+			if (numInt % 2 == 0) {
+				System.out.println("The number is even!");
+			} else {
+				System.out.println("The number is odd!");
+			}
+		} else if ((numInt >= 6) && (numInt <= 15)) {
+			if (numInt % 3 == 0) {
+				System.out.println("The number could be divided by 3 without remainder!");
+			} else {
+				System.out.println("The number could NOT be divided by 3 without remainder!");
+			}
+		} else {
+			if (numInt >= 1) {
+				System.out.println("The number positive!");
+			} else if (numInt < 0) {
+				System.out.println("The number negative!");
+			} else if (numInt == 0) {
+				System.out.println("The number is zero!");
+			}
+		}
+		input.close();
+
+	}
+
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Task6 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Please enter coeficient \"a\"");
+		int a = input.nextInt();
+		System.out.println("Please enter coeficient \"b\"");
+		int b = input.nextInt();
+		System.out.println("Please enter coeficient \"c\"");
+		int c = input.nextInt();
+		
+		double root1, root2; //This is now a double, too.
+	    
+		root1 = (-b + Math.sqrt(Math.pow(b, 2) - 4*a*c)) / (2*a);
+	    root2 = (-b - Math.sqrt(Math.pow(b, 2) - 4*a*c)) / (2*a);
+	    return Math.max(root1, root2);  
+	}
+}

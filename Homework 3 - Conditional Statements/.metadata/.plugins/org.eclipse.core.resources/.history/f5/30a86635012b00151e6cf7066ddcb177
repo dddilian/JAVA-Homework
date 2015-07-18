@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Task4 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Please enter a number between 0 and 9:");
+		int resault = input.nextInt();
+
+		switch (resault) {
+		case 1:
+		case 2:
+		case 3:
+			resault = resault * 5;
+			System.out.println("Your resault is: " + resault);
+			break;
+		case 4:
+		case 5:
+		case 6:
+			resault = resault * 10;
+			System.out.println("Your resault is: " + resault);
+			break;
+		case 7:
+		case 8:
+		case 9:
+			resault = resault * 50;
+			System.out.println("Your resault is: " + resault);
+			break;
+
+		}
+		input.close();
+	}
+}

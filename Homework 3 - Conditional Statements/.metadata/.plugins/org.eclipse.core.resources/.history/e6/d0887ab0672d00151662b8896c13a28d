@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class BiggestOfFive2 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+
+		int Num, biggestNum = 0;
+
+		int i = 0;
+		while (i < 5) {
+
+			System.out.print("Enter a number: ");
+
+			if (input.hasNextInt()) {
+				Num = input.nextInt();
+
+				if (i == 0) {
+					biggestNum = Num;
+
+				} else if (Num > biggestNum) {
+					biggestNum = Num;
+				}
+
+				i++;
+			} else {
+				System.out.println("Invalid value!");
+				input.next();
+			}
+		}
+
+		System.out.print("Biggest number is: " + biggestNum);
+
+		input.close();
+
+	}
+}

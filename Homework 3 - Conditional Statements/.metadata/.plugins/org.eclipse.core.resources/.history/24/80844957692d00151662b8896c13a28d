@@ -1,0 +1,399 @@
+import java.util.Scanner;
+
+public class Task9 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+
+		int num = input.nextInt();
+
+		int hundreds = num / 100 % 10;
+		int tens = num / 10 % 10;
+		int units = num % 10;
+
+		if (hundreds != 0) {
+			switch (hundreds) {
+			case 1:
+				System.out.print("one hundred ");
+				break;
+			case 2:
+				System.out.print("two hundred ");
+				break;
+			case 3:
+				System.out.print("three hundred ");
+				break;
+			case 4:
+				System.out.print("four hundred ");
+				break;
+			case 5:
+				System.out.print("five hundred ");
+				break;
+			case 6:
+				System.out.print("six hundred ");
+				break;
+			case 7:
+				System.out.print("seven hundred ");
+				break;
+			case 8:
+				System.out.print("eight hundred ");
+				break;
+			case 9:
+				System.out.print("nine hundred ");
+				break;
+			}
+		}
+		if (tens == 0) {
+			switch (units) {
+			case 0:
+				// System.out.println("zero");
+				break;
+			case 1:
+				System.out.println("one");
+				break;
+			case 2:
+				System.out.println("two");
+				break;
+			case 3:
+				System.out.println("three");
+				break;
+			case 4:
+				System.out.println("four");
+				break;
+			case 5:
+				System.out.println("five");
+				break;
+			case 6:
+				System.out.println("six");
+				break;
+			case 7:
+				System.out.println("seven");
+				break;
+			case 8:
+				System.out.println("eight");
+				break;
+			case 9:
+				System.out.println("nine");
+				break;
+			}
+		} else if (tens == 1) {
+			switch (units) {
+			case 0:
+				System.out.println("and ten");
+				break;
+			case 1:
+				System.out.println("and eleven");
+				break;
+			case 2:
+				System.out.println("and twelve");
+				break;
+			case 3:
+				System.out.println("and thirteen");
+				break;
+			case 4:
+				System.out.println("and fourteen");
+				break;
+			case 5:
+				System.out.println("and fifteen");
+				break;
+			case 6:
+				System.out.println("and sixteen");
+				break;
+			case 7:
+				System.out.println("and seventeen");
+				break;
+			case 8:
+				System.out.println("and eighteen");
+				break;
+			case 9:
+				System.out.println("and nineteen");
+				break;
+			}
+		} else if (tens > 1) {
+			switch (tens) {
+			case 2:
+				System.out.print("twenty ");
+				switch (units) {
+				case 0:
+					System.out.println("");
+					break;
+				case 1:
+					System.out.println("one");
+					break;
+				case 2:
+					System.out.println("two");
+					break;
+				case 3:
+					System.out.println("three");
+					break;
+				case 4:
+					System.out.println("four");
+					break;
+				case 5:
+					System.out.println("five");
+					break;
+				case 6:
+					System.out.println("six");
+					break;
+				case 7:
+					System.out.println("seven");
+					break;
+				case 8:
+					System.out.println("eight");
+					break;
+				case 9:
+					System.out.println("nine");
+					break;
+				}
+				break;
+			case 3:
+				System.out.print("thirty ");
+				switch (units) {
+				case 0:
+					System.out.println("");
+					break;
+				case 1:
+					System.out.println("one");
+					break;
+				case 2:
+					System.out.println("two");
+					break;
+				case 3:
+					System.out.println("three");
+					break;
+				case 4:
+					System.out.println("four");
+					break;
+				case 5:
+					System.out.println("five");
+					break;
+				case 6:
+					System.out.println("six");
+					break;
+				case 7:
+					System.out.println("seven");
+					break;
+				case 8:
+					System.out.println("eight");
+					break;
+				case 9:
+					System.out.println("nine");
+					break;
+				}
+				break;
+			case 4:
+				System.out.print("forty ");
+				switch (units) {
+				case 0:
+					System.out.println("");
+					break;
+				case 1:
+					System.out.println("one");
+					break;
+				case 2:
+					System.out.println("two");
+					break;
+				case 3:
+					System.out.println("three");
+					break;
+				case 4:
+					System.out.println("four");
+					break;
+				case 5:
+					System.out.println("five");
+					break;
+				case 6:
+					System.out.println("six");
+					break;
+				case 7:
+					System.out.println("seven");
+					break;
+				case 8:
+					System.out.println("eight");
+					break;
+				case 9:
+					System.out.println("nine");
+					break;
+				}
+				break;
+			case 5:
+				System.out.print("fifty ");
+				switch (units) {
+				case 0:
+					System.out.println("");
+					break;
+				case 1:
+					System.out.println("one");
+					break;
+				case 2:
+					System.out.println("two");
+					break;
+				case 3:
+					System.out.println("three");
+					break;
+				case 4:
+					System.out.println("four");
+					break;
+				case 5:
+					System.out.println("five");
+					break;
+				case 6:
+					System.out.println("six");
+					break;
+				case 7:
+					System.out.println("seven");
+					break;
+				case 8:
+					System.out.println("eight");
+					break;
+				case 9:
+					System.out.println("nine");
+					break;
+				}
+				break;
+			case 6:
+				System.out.print("sixty ");
+				switch (units) {
+				case 0:
+					System.out.println("");
+					break;
+				case 1:
+					System.out.println("one");
+					break;
+				case 2:
+					System.out.println("two");
+					break;
+				case 3:
+					System.out.println("three");
+					break;
+				case 4:
+					System.out.println("four");
+					break;
+				case 5:
+					System.out.println("five");
+					break;
+				case 6:
+					System.out.println("six");
+					break;
+				case 7:
+					System.out.println("seven");
+					break;
+				case 8:
+					System.out.println("eight");
+					break;
+				case 9:
+					System.out.println("nine");
+					break;
+				}
+				break;
+			case 7:
+				System.out.print("seventy ");
+				switch (units) {
+				case 0:
+					System.out.println("");
+					break;
+				case 1:
+					System.out.println("one");
+					break;
+				case 2:
+					System.out.println("two");
+					break;
+				case 3:
+					System.out.println("three");
+					break;
+				case 4:
+					System.out.println("four");
+					break;
+				case 5:
+					System.out.println("five");
+					break;
+				case 6:
+					System.out.println("six");
+					break;
+				case 7:
+					System.out.println("seven");
+					break;
+				case 8:
+					System.out.println("eight");
+					break;
+				case 9:
+					System.out.println("nine");
+					break;
+				}
+				break;
+			case 8:
+				System.out.print("eighty ");
+				switch (units) {
+				case 0:
+					System.out.println("");
+					break;
+				case 1:
+					System.out.println("one");
+					break;
+				case 2:
+					System.out.println("two");
+					break;
+				case 3:
+					System.out.println("three");
+					break;
+				case 4:
+					System.out.println("four");
+					break;
+				case 5:
+					System.out.println("five");
+					break;
+				case 6:
+					System.out.println("six");
+					break;
+				case 7:
+					System.out.println("seven");
+					break;
+				case 8:
+					System.out.println("eight");
+					break;
+				case 9:
+					System.out.println("nine");
+					break;
+				}
+				break;
+			case 9:
+				System.out.print("ninety ");
+				switch (units) {
+				case 0:
+					System.out.println("");
+					break;
+				case 1:
+					System.out.println("one");
+					break;
+				case 2:
+					System.out.println("two");
+					break;
+				case 3:
+					System.out.println("three");
+					break;
+				case 4:
+					System.out.println("four");
+					break;
+				case 5:
+					System.out.println("five");
+					break;
+				case 6:
+					System.out.println("six");
+					break;
+				case 7:
+					System.out.println("seven");
+					break;
+				case 8:
+					System.out.println("eight");
+					break;
+				case 9:
+					System.out.println("nine");
+					break;
+				}
+				break;
+			}
+
+		}
+		input.close();
+	}
+
+}

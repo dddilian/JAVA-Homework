@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Task8 {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in, "UTF-8");
+		System.out.println("Enter 5 numbers: ");
+
+		System.out.println("Enter number one: ");
+		int number1 = input.nextInt();
+
+		System.out.println("Enter number two: ");
+		int number2 = input.nextInt();
+
+		System.out.println("Enter number three: ");
+		int number3 = input.nextInt();
+		
+		System.out.println("Enter number four: ");
+		int number4 = input.nextInt();
+
+		System.out.println("Enter number five: ");
+		int number5 = input.nextInt();
+
+		int biggest = number1;
+
+		if (number2 >= biggest) {
+			if (number2 >= number3) {
+				biggest = number2;
+
+			} else {
+				biggest = number3;
+			}
+		} else {
+			if (number4 >= biggest) {
+				biggest = number4;
+			}else if (number5 > number4){
+				biggest = number5;
+			}
+		}
+		System.out.println("The biggest number is:" + biggest);
+		input.close();
+	}
+}
