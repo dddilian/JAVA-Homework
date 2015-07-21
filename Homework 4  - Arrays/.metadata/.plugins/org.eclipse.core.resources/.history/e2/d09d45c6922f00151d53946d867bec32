@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Task12Spiral {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+		
+		System.out.print("Enter the number of rows: ");
+		int rows = input.nextInt();
+		System.out.print("Enter the number of collums: ");
+		int cols = input.nextInt();
+
+		int[][] matrix = new int[rows][cols];
+		int a = 1;
+		
+		for (int row = 0; row < matrix.length; row++) {  //попълване на елементите в матрицата
+			for (int col = 0; col < matrix[0].length; col++) {
+				matrix[row][col] = a;
+				a++;
+			}
+			System.out.println();
+			}
+		// вертикално принтиране на матрица, отляво-надясно:
+		for (int col = 0; col < matrix.length; col++) // тук първо пълним колоните,
+		{
+			for (int row = 0; row < matrix.length; row++) // а после редовете
+			{
+				
+				System.out.print(matrix[row][col] + " ");
+			}
+			System.out.println(); // за да е всеки ред на нов ред
+		}
+		System.out.println();
+
+		// за да принтнем по нормалния начин декларираният двумерен масив /матрица/:
+		for (int row = 0; row < matrix.length; row++) {     
+			for (int col = 0; col < matrix.length; col++) {
+			System.out.printf("%d ", matrix[row][col]);
+			}
+			System.out.println();
+		}
+		input.close();
+	}
+}

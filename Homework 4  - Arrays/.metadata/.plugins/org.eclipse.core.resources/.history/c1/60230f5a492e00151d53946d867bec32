@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Task3ElementsIndex10 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+
+		System.out.print("Enter a number for array length: ");
+		int n = input.nextInt();
+		int[] array = new int[n];
+		
+		for (int i = 0; i < array.length; i++) {
+			
+			array[i] = i*10;
+			}
+		System.out.print("Enter a number for array length: ");
+		input.close();
+	}
+}

@@ -1,0 +1,19 @@
+import java.util.Arrays;
+
+public class Task9ReversedArray {
+
+	public static void main(String[] args) {
+
+		int[] array = new int[] { 1, 2, 3, 4, 5 }; // Get array size
+		System.out.println(Arrays.toString(array));
+		
+		int length = array.length; // Declare and create the reversed array
+
+		int[] reversed = new int[length]; // Initialize the reversed array
+
+		for (int i = 0; i < length; i++) {
+			reversed[length- 1 - i] = array[i];
+		}
+		System.out.println(Arrays.toString(reversed)); // Print the reversed array
+	}
+}

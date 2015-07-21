@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Task11VerticalHorizontalMatrix {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+		int rows = input.nextInt();
+		int cols = input.nextInt();
+		int[][] matrix = new int[rows][cols];
+
+		for (int row = 0; row < matrix.length; row++)     // за да принтнем по нормалния начин декларираният двумерен масив /матрица/
+		{
+			for (int col = 0; col < matrix.length; col++) {
+				System.out.print(matrix[row][col] + " ");
+			}
+			System.out.println(); // за да е всеки ред на нов ред
+
+		}
+
+		System.out.println();
+
+		// вертикално пълнене на матрица, отляво-надясно:
+		for (int col = 0; col < matrix.length; col++)           // тук първо пълним колоните,
+		{
+			for (int row = 0; row < matrix.length; row++)       // а после редовете
+			{
+				System.out.print(matrix[row][col] + " ");
+			}
+			System.out.println(); // за да е всеки ред на нов ред
+		}
+		input.close();
+	}
+}

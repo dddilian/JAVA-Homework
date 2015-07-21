@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+public class Task5Binary {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+
+		System.out.print("Enter a number for array length: ");
+		int n = input.nextInt();
+		int[] array = new int[n];
+
+		int j;
+		boolean flag = true; // set flag to true to begin first pass
+		int temp; // holding variable
+
+		for (int i = 0; i < array.length; i++) {
+			System.out.print("Enter a number for element " + i);
+			array[i] = input.nextInt();
+		}
+		System.out.println(java.util.Arrays.toString(array));
+
+		while (flag) {
+			flag = false; // set flag to false awaiting a possible swap
+			for (j = 0; j < array.length - 1; j++) {
+				if (array[j] > array[j + 1]) // Знакът да се смени на по-голямо
+												// < for за сортиране в низходящ
+												// ред ред!!!!!!!
+				{
+					temp = array[j]; // swap elements
+					array[j] = array[j + 1];
+					array[j + 1] = temp;
+					flag = true; // shows a swap occurred
+				}
+			}
+
+			System.out.println("Sorted in accending way");
+			System.out.println(java.util.Arrays.toString(array));
+
+			System.out.println("Enter a number that represents existing element in the array to see it's position: ");
+			int num = input.nextInt();
+
+			int position;
+			//int comparisonCount = 1;  // counting the number of comparisons (optional)
+			int lowerbound = array[0];
+			int upperbound = array[n] - 1;
+			// To start, find the subscript of the middle position.
+			position = (lowerbound + upperbound) / 2;
+
+			while ((array[position] != num) && (lowerbound <= upperbound)) {
+				//comparisonCount++;
+				if (array[position] > num) // If the number is > num, ..
+				{ // decrease position by one.
+					upperbound = position - 1;
+				} else {
+					lowerbound = position + 1; // Else, increase position by one.
+				}
+				position = (lowerbound + upperbound) / 2;
+			}
+			if (lowerbound <= upperbound) {
+				System.out.println("The number was found in array subscript" + position);
+				System.out.println("The binary search found the number after");
+				// printing the number of comparisons is optional
+			} else
+				System.out.println("Sorry, the number is not in this array.  The binary search made ");
+		}
+
+		input.close();
+	}
+}

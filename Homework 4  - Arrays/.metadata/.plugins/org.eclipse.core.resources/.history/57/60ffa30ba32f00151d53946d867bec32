@@ -1,0 +1,8 @@
+import java.util.Scanner;
+
+public class Task12Spiral {
+
+	public static void main(String[] args) {
+		
+	}
+}
