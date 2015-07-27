@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Task5 {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in, "UTF-8");
+		int a = input.nextInt();
+		int b = input.nextInt();
+
+		printSymmetric(a,b);
+		input.close();
+	}
+		public static void printSymmetric(int a,int b) {
+		for (int i = a; i <= b; i++) {
+			if (i <= 11) {
+				System.out.print(i + " ");
+			} else if (i > 11 && i < 100) {
+				if (i % 10 == i / 10) {
+					System.out.print(i + " ");
+				}
+
+			} else if (i >= 100) {
+				if (i % 10 == i / 100) {
+					System.out.print(i + " ");
+				}
+			}
+		}
+		System.out.println();
+	}
+}

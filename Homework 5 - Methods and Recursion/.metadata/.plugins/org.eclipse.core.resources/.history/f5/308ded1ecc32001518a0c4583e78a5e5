@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Task4 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+
+		System.out.print("Enter a number: ");
+		int number = input.nextInt();
+
+		printSign(number);
+	}
+
+	public static void printSign(int number) {
+		if (number > 0) {
+			System.out.println("Positive");
+		} else if (number < 0) {
+			System.out.println("Negative");
+		} else {
+			System.out.println("Zero");
+		}
+	}
+}

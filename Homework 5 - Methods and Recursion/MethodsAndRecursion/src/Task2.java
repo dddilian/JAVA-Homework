@@ -1,0 +1,20 @@
+
+import java.util.Scanner;
+
+public class Task2 {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in, "UTF-8");
+
+		System.out.print("Enter name: ");
+		String userName = input.nextLine();
+
+		printName(userName);
+		input.close();
+	}
+
+	public static void printName(String userName) {
+		System.out.println("Greetings, " + userName + "!");
+	}
+}

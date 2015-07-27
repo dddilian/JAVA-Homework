@@ -1,0 +1,19 @@
+import java.util.Random;
+
+public class Task3 {
+
+	public static void main(String[] args) {
+		long temp = 0;
+		     
+		Random rand = new Random(1000);             
+		         //This will give value from 0 to 49. For 1 to 50: rand.nextInt(50) + 1;
+		
+		for (int i = 1; i <= 3; ++i) {
+			int random = rand.nextInt();   
+			System.out.println(random);
+			
+			temp = random * random;
+		}
+		System.out.println(temp);
+	}
+}

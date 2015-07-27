@@ -1,0 +1,29 @@
+
+public class Task5 {
+
+	public static void main(String[] args) {
+		System.out.println("Symmetrical numbers in the range 10 - 999:");
+		int a = 11;
+		int b = 999;
+
+		printSymmetric(a, b);
+	}
+
+	public static void printSymmetric(int a, int b) {
+		for (int i = a; i <= b; i++) {
+			if (i <= 11) {
+				System.out.print(i + " ");
+			} else if (i > 11 && i < 100) {
+				if (i % 10 == i / 10) {
+					System.out.print(i + " ");
+				}
+
+			} else if (i >= 100) {
+				if (i % 10 == i / 100) {
+					System.out.print(i + " ");
+				}
+			}
+		}
+		System.out.println();
+	}
+}

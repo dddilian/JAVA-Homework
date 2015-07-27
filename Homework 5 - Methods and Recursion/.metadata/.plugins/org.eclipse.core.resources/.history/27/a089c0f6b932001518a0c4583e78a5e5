@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Task1b {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+
+		System.out.print("Enter number one: ");
+		int num1 = input.nextInt();
+
+		System.out.print("Enter number two: ");
+		int num2 = input.nextInt();
+
+		System.out.print("Enter number three: ");
+		int num3 = input.nextInt();
+
+		printMax(num1, num2, num3);
+		input.close();
+	}
+	
+
+	public static void printMax(int num1, int num2, int num3) {
+		int max = num1;
+		if (num2 >= max) {
+			if (num2 >= num3) {
+				max = num2;
+
+			} else {
+				max = num3;
+			}
+		} else {
+			if (num3 >= max) {
+				max = num3;
+			}
+		}
+		System.out.println("Maximal number: " + max);
+	}
+}

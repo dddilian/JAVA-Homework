@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class Task2MethodsFromClass {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+		
+		
+		
+	}
+}

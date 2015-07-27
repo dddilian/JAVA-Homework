@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Task1b {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in, "UTF-8");
+
+		System.out.print("Enter number one: ");
+		int a = input.nextInt();
+
+		System.out.print("Enter number two: ");
+		int b = input.nextInt();
+
+		System.out.print("Enter number three: ");
+		int c = input.nextInt();
+
+		System.out.println(Math.max(a, b));
+	}
+}
