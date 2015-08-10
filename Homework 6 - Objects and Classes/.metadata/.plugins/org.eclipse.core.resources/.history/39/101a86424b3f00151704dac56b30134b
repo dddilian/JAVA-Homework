@@ -1,0 +1,30 @@
+package Task3and4;
+
+public class Drinks extends Stock {
+
+	protected String Alchoholic;
+	protected String Soda;
+	
+	public Drinks(int price, boolean isAvaliable, String alchoholic, String soda) {
+		super(price, isAvaliable);
+		Alchoholic = alchoholic;
+		Soda = soda;
+	}
+
+	public String getAlchoholic() {
+		return Alchoholic;
+	}
+
+	public void setAlchoholic(String alchoholic) {
+		Alchoholic = alchoholic;
+	}
+
+	public String getSoda() {
+		return Soda;
+	}
+
+	public void setSoda(String soda) {
+		Soda = soda;
+		
+	}
+}

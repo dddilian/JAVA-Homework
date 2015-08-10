@@ -1,0 +1,30 @@
+package Task3and4;
+
+public class Vegetables extends Stock {
+
+	protected String natural;
+	protected String fromJar;
+	
+	public Vegetables(int price, boolean isAvaliable, String natural, String fromJar) {
+		super(price, isAvaliable);
+		this.natural = natural;
+		this.fromJar = fromJar;
+	}
+
+	public String getNatural() {
+		return natural;
+	}
+
+	public void setNatural(String natural) {
+		this.natural = natural;
+	}
+
+	public String getFromJar() {
+		return fromJar;
+	}
+
+	public void setFromJar(String fromJar) {
+		this.fromJar = fromJar;
+		
+	}
+}

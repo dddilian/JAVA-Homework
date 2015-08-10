@@ -1,0 +1,30 @@
+package Task3and4;
+
+public class Meat extends Stock {
+
+	protected String raw;
+	protected String grilled;
+
+	public Meat(int price, boolean isAvaliable, String raw, String grilled) {
+		super(price, isAvaliable);
+		this.raw = raw;
+		this.grilled = grilled;
+	}
+
+	public String getRaw() {
+		return raw;
+	}
+
+	public void setRaw(String raw) {
+		this.raw = raw;
+	}
+
+	public String getGrilled() {
+		return grilled;
+	}
+
+	public void setGrilled(String grilled) {
+		this.grilled = grilled;
+		
+	}
+}

@@ -1,0 +1,30 @@
+package Task3and4;
+
+public class Deserts extends Stock {
+
+	protected String IceCream;
+	protected String Cake;
+	
+	public Deserts(int price, boolean isAvaliable, String iceCream, String cake) {
+		super(price, isAvaliable);
+		IceCream = iceCream;
+		Cake = cake;
+	}
+
+	public String getIceCream() {
+		return IceCream;
+	}
+
+	public void setIceCream(String iceCream) {
+		IceCream = iceCream;
+	}
+
+	public String getCake() {
+		return Cake;
+	}
+
+	public void setCake(String cake) {
+		Cake = cake;
+		
+	}
+}

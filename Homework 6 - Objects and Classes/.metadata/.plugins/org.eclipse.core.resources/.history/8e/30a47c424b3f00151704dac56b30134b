@@ -1,0 +1,30 @@
+package Task3and4;
+
+public class Fruits extends Stock {
+
+	protected String fresh;
+	protected String conserved;
+
+	public Fruits(int price, boolean isAvaliable, String fresh, String conserved) {
+		super(price, isAvaliable);
+		this.fresh = fresh;
+		this.conserved = conserved;
+	}
+
+	public String getFresh() {
+		return fresh;
+	}
+
+	public void setFresh(String fresh) {
+		this.fresh = fresh;
+	}
+
+	public String getConserved() {
+		return conserved;
+	}
+
+	public void setConserved(String conserved) {
+		this.conserved = conserved;
+
+	}
+}

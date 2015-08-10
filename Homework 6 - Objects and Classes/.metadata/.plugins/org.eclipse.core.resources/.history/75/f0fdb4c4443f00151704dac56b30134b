@@ -1,0 +1,30 @@
+package Task3and4;
+
+public class Vegetables extends Stock {
+
+	protected String Tomato;
+	protected String Cucumber;
+
+	public Vegetables(int price, boolean isAvaliable, String tomato, String cucumber) {
+		super(price, isAvaliable);
+		Tomato = tomato;
+		Cucumber = cucumber;
+	}
+
+	public String getTomato() {
+		return Tomato;
+	}
+
+	public void setTomato(String tomato) {
+		Tomato = tomato;
+	}
+
+	public String getCucumber() {
+		return Cucumber;
+	}
+
+	public void setCucumber(String cucumber) {
+		Cucumber = cucumber;
+
+	}
+}

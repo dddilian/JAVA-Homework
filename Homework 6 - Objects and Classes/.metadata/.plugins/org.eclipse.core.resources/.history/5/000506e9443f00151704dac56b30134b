@@ -1,0 +1,7 @@
+package Task3and4;
+
+public class Vegetables extends Stock {
+
+	protected String natural;
+	protected String fromJar;
+}

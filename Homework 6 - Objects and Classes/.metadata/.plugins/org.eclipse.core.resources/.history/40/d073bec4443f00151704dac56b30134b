@@ -1,0 +1,30 @@
+package Task3and4;
+
+public class Fruits extends Stock {
+
+	protected String Apple;
+	protected String Grape;
+	
+	public Fruits(int price, boolean isAvaliable, String apple, String grape) {
+		super(price, isAvaliable);
+		Apple = apple;
+		Grape = grape;
+	}
+
+	public String getApple() {
+		return Apple;
+	}
+
+	public void setApple(String apple) {
+		Apple = apple;
+	}
+
+	public String getGrape() {
+		return Grape;
+	}
+
+	public void setGrape(String grape) {
+		Grape = grape;
+		
+	}
+}

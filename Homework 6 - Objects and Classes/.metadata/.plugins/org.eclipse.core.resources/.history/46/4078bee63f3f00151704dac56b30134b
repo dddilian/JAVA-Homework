@@ -1,0 +1,8 @@
+package Task3and4;
+
+public abstract class Stock {
+	
+	protected int price;
+	protected boolean isAvaliable;
+	
+}

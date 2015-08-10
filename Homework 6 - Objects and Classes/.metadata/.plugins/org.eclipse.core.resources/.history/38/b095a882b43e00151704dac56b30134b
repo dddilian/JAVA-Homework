@@ -1,0 +1,10 @@
+package Task2Cars;
+
+public class CarManipulate {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

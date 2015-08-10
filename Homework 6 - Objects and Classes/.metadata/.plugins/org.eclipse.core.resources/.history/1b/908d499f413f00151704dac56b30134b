@@ -1,0 +1,29 @@
+package Task3and4;
+
+public class Meat extends Stock {
+
+	protected String Pork;
+	protected String Lamb;
+
+	public Meat(int price, boolean isAvaliable, String pork, String lamb) {
+		super(price, isAvaliable);
+		Pork = pork;
+		Lamb = lamb;
+	}
+
+	public String getPork() {
+		return Pork;
+	}
+
+	public void setPork(String pork) {
+		Pork = pork;
+	}
+
+	public String getLamb() {
+		return Lamb;
+	}
+
+	public void setLamb(String lamb) {
+		Lamb = lamb;
+	}
+}
